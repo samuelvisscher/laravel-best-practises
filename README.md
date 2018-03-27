@@ -32,16 +32,6 @@ All communication between the front-end and back-end will occur through JSON req
 
 When creating a new resource, please follow the following rules:
 
-### Model
-
-Models are placed within the `app/Models` folder, and typically created together with their respective database tables.
-
-Use the following command: `php artisan make:model Models/NameOfModel -m`
-
-### Tables
-
-To be added ..
-
 ### Controllers
 
 Controllers are placed within the `app/Http/Controllers` folder, unless a more specific folder has been created.
@@ -50,8 +40,24 @@ Use the following command: `php artisan make:controller NameOfModelController`
 
 Only add methods (index, show, create, update and destroy), which are being exposed by `routes/api.php`.
 
+### Model
+
+Models are placed within the `app/Models` folder, and typically created together with their respective database tables.
+
+Use the following command: `php artisan make:model Models/NameOfModel -m`
+
 ### Requests
 
 All requests are placed within the `app/Http/Requests` folder, unless a more specific folder has been created.
 
 Use the following command: `php artisan make:request NameOfModelCreate` or `php artisan make:request NameOfModelUpdate`.
+
+### Tables
+
+To be added ..
+
+### Validators
+
+All custom validators are placed within the `app/Rules`.
+
+Use the following command: `php artisan make:rule NameOfRule`
